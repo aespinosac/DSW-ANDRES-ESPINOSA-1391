@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import"estilo.css";
+    </style>
+</head>
+<body>
+
+     <br>
+     <br>
+    <center>
+    <h2>TIPOS DE SELECTORES  </h2>
+</center>
+<center>
+    <pre>
+        <br>
+     <br> 
+        Hay diferentes agrupaciones de selectores, y conocer qué tipo de selector necesitas te ayudará a encontrar la herramienta adecuada para tu trabajo.
+         En estos subartículos vamos a ver los diferentes grupos de selectores con más detalle.
+
+        Selectores de tipo, de clase y de ID
+        Este grupo incluye selectores que delimitan un elemento HTML, como por ejemplo un h1.
+        
+        h1 { }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        También incluye selectores que delimitan una clase:
+        
+        .box { }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        o un ID:
+        
+        #unique { }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        Selectores de atributo
+        Este grupo de selectores te proporciona diferentes formas de seleccionar elementos según la presencia de un atributo determinado en un elemento:
+        
+        a[title] { }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        O incluso hacer una selección basada en la presencia de un atributo que tiene un valor particular asignado:
+        
+        a[href="https://example.com"] { }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        Las pseudoclases y los pseudoelementos
+        Este grupo de selectores incluye pseudoclases, que aplican estilo a ciertos estados de un elemento. La pseudoclase :hover, por ejemplo, selecciona un elemento solo cuando se le pasa el ratón por encima.
+        
+        a: hover {}
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        También incluye pseudoelementos, que seleccionan una parte determinada de un elemento en vez del elemento en sí. Por ejemplo, ::first-line siempre selecciona la primera línea del texto que se encuentra dentro de un elemento (<p>, en el ejemplo siguiente), y actúa como si un elemento <span> hubiera delimitado la primera línea, seleccionado y aplicado estilo.
+        
+        p::first-line { }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        Combinadores
+        El último grupo de selectores combina otros selectores con el fin de delimitar elementos de nuestros documentos. El ejemplo siguiente selecciona los párrafos que son hijos directos del elemento <article> utilizando el operador de combinación hijo (>):
+        
+        article > p { }
+        
+        
+    </pre>
+</center>
+
+     
+</body>
+</html>

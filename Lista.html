@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import"estilo.css";
+    </style>
+</head>
+<body>
+
+     <br>
+     <br>
+    <center>
+    <h2>LISTADO DE SELECTORES    </h2>
+</center>
+<center>
+    <pre>Si más de un elemento utiliza el mismo CSS, puedes combinar los selectores en una lista de selectores para que la regla se aplique a cada uno de los selectores individuales. 
+        Por ejemplo, si tengo el mismo CSS para un h1 y para una clase .special, los puedo escribir como dos reglas separadas.
+
+        h1 {
+          color: blue;
+        }
+        
+        .special {
+          color: blue;
+        }
+        
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        También los podrías combinar en una lista de selectores, separándolos con una coma.
+        
+        h1, .special {
+          color: blue;
+        }
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        Es posible dejar un espacio en blanco tanto antes como después de la coma. Incluso puede resultar más legible si cada selector se encuentra en una línea distinta.
+        
+        h1,
+        .special {
+          color: blue;
+        }
+        
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        En el ejemplo siguiente, intenta combinar los dos selectores de modo que tengan la misma declaración. El aspecto visual debe permanecer igual tras la combinación.
+        
+        
+        Cuando agrupas los selectores de esta manera, si alguno de los selectores no es válido, el navegador sencillamente ignora toda la regla.
+        
+        En el ejemplo siguiente, la regla que corresponde al selector de clase que no es válido se ignora, mientras que el estilo se aplica al elemento h1.
+        
+        h1 {
+          color: blue;
+        }
+        
+        ..special {
+          color: blue;
+        }
+        
+        Copy to ClipboardCopy to ClipboardCopy to ClipboardCopy to Clipboard
+        Sin embargo, si se combinan, toda la regla se considera no válida y no se aplicará estilo ni a h1 ni a la clase.
+        
+        h1, ..special {
+          color: blue;
+        }
+    </pre>
+</center>
+
+     
+</body>
+</html>
